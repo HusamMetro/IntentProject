@@ -42,6 +42,9 @@ class MainActivity : AppCompatActivity() {
             if (resultCode == RESULT_OK) { // to check if the response was RESULT_OK then do my code inside
                 myText.text = "Everything is ok"
                 myText.setTextSize(50f)
+            } else {
+                myText.text = "I Automatically got responce RESULT_CANCELED"
+                myText.setTextSize(15f)
             }
         }
     }
